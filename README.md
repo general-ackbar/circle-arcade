@@ -1,6 +1,7 @@
 # Arcade Suite for Raspberry Pi
 
-The Arcade Suite is built upon the Circle framework. To compile and set up the suite, follow the steps below. Circle is included as a submodule, but requires some initial setup.
+The Arcade Suite consist of 4 classic retro games: Tetris, Space Invaders, Snake and Pong and a simple menu. The games are built using Circle - a C++ bare metal programming environment for the Raspberry Pi.
+To compile and set up the suite, follow the steps below. Circle is included as a submodule, but requires some initial setup.
 
 ## Prerequisites
 
@@ -8,7 +9,7 @@ The Arcade Suite is built upon the Circle framework. To compile and set up the s
   - For Raspberry Pi 1: [ARM1176JZF core with EABI support](#http://elinux.org/Rpi_Software#ARM)
   - For Raspberry Pi 2/3/4: [Cortex-A7, A53, or A72 support](#https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
 
-Please make sure to install it before proceeding.
+   Please make sure to install it before proceeding.
 
 ## Setup Instructions
 
@@ -27,8 +28,9 @@ Please make sure to install it before proceeding.
 	cd arcade-suite/circle
 	./configure
 	make all
+	```
 	
-For more details and options, refer to the README file in the Circle submodule directory or the original Circle repository.
+   For more details and options, refer to the README file in the Circle submodule directory or the original Circle repository.
 
 3. Compile the SDCard Addon:
 
@@ -37,16 +39,17 @@ For more details and options, refer to the README file in the Circle submodule d
 	```bash
 	cd addon/SDCard
 	make
+	
 
 ## Build the Arcade Suite:
 
-	Return to the root directory of the project and build the entire suite.
+1.  Return to the root directory of the project and build the entire suite.
 
-	```bash
+    ```bash
 	cd ../../
 	make
-
-This should generate a kernel.img file.
+    ```
+   This should generate a kernel.img file.
 
 ##  Final Steps
 
@@ -63,10 +66,11 @@ This should generate a kernel.img file.
 3. Edit or create a config.txt file in the SD card root specifying the resolution
 	```bash
 	width=640 height=480
+	```
 	
 4. Eject SD card, plug it in the RPI, attach a controller and have fun :)
 
-## Additional Resources
+## Resources
 
 [Circle Project](#https://github.com/rsta2/circle)
 

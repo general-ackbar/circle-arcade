@@ -20,7 +20,7 @@ LIBS	= $(CIRCLEHOME)/addon/fatfs/libfatfs.a \
 	  $(CIRCLEHOME)/lib/libcircle.a
 
 
-include $(CIRCLEHOME)/Rules.mk
+include $(CIRCLEHOME)/app/Rules.mk
 
 -include $(DEPS)
 

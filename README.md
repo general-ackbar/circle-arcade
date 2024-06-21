@@ -18,7 +18,7 @@ To compile and set up the suite, follow the steps below. Circle is included as a
    Clone the repository and initialize the submodules recursively.
 
    ```bash
-   git clone --recursive https://github.com/yourusername/arcade-suite.git
+   git clone --recursive https://github.com/general-ackbar/circle-arcade.git
 
 2. Build Circle Framework:
 

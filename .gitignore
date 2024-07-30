@@ -27,6 +27,9 @@
 *.lib
 
 # Executables
-*.exe
+*.elf
+*.img
+*.lst
+*.map
 *.out
-*.app
+
